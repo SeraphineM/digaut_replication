@@ -1,0 +1,1269 @@
+---
+title: "How practices of digital authoritarianism harm democracy"
+author: 
+- name: Seraphine F. Maerz
+  affiliations:
+    - University of Melbourne, Australia
+format:
+  docx: 
+    pandoc_args:
+      - '--lua-filter=parse-latex.lua'
+thanks: "Contact: Seraphine F. Maerz, seraphine.maerz@unimelb.edu.au. I am immensely grateful for valuable feedback from the participants at the ECPR general conference in Prague, the Decrypting Digital Authoritarianism confernce at EUI in Florence, and of the Special Issue authors' workshop, especially Ahmed Maati, Martina Lucaccini, and Lisa Garbe. I also thank Edward Goldring for helpful comments. The author received funding by the German Research Foundation, project number 421517935."
+abstract: "During the last decade, digital authoritarianism has become a key characteristic of modern autocracies. However, a range of democratically elected governments also apply practices of digital authoritarianism. This includes official disinformation in social media, the abuse of defamation and copyright laws, surveilling social media, and government access to personal data on the internet. Are these instances of digital authoritarianism in democratic contexts merely flaws of the system which are effectively handled by strong democratic institutions and an engaged public, or do they significantly harm democracy? This article conceptualizes three forms of digital authoritarianism - manipulative, surveilling, and controlling practices - which have the potential to undermine basic principles of democracy. Manipulating online contents with official disinformation and 'fake news' laws sabotages accountability. Social media surveillance and accessing private data infringes on civil liberties. Controlling the online public sphere with internet censorship and shutdowns violates freedom of expression. Based on data from the Digital Society Project, the article analyzes the effects of digital authoritarianism in democratic settings and, for the most part, finds confirmation for the assumptions about how manipulative, surveilling, and controlling practices harm democratic institutions."
+keywords: "Authoritarianism, Democracy, Censorship, Repression, Surveillance, Disinformation, Social Media, Internet"
+csl: democratization.csl
+bibliography: digaut.bib
+always_allow_html: true
+geometry: margin=1in
+fontfamily: mathpazo
+fontsize: 11pt
+spacing: double
+endnote: yes
+---
+
+
+
+# Introduction
+
+What do we know about the political outcomes of the internet? After more than two decades of living in the digital age, the internet has not brought the hoped-for liberalization [e.g., @Diamond2010]. Instead, a number of studies shows how authoritarian regimes systematically abuse the internet to strengthen their rule [@Kendall2020; @Guriev2019; @Gunitsky2015]. Other analyses have tested and refined the "repression technology" hypothesis [@Rod2015; @Hellmeier2016; @Gohdes2020] and provide insights into how digital repression is applied in authoritarian contexts [@Garbe2025; @Michaelsen2025; @Sombatpoonsiri2025; @Feldstein2021]. Theoretical contributions argue that digitization has transformed conventional forms of authoritarianism [@Schlumberger2023] and propose new empirical strategies to investigate into the authoritarian digital toolkit [@Keremoglu2020].
+
+In light of this burgeoning literature on the internet and authoritarianism, recent research seems to agree that digital authoritarian practices such as internet censorship, shutdowns, government disinformation in social media, and social media surveillance have become key features of modern autocracies. However, several of those practices are also applied by democratically elected governments and the reasons for this vary. Democratic governments may use online surveillance or content control to combat extremist threats, foreign interference, or disinformation and harmful online behavior. For example, Germany passed the Network Enforcement Law (NetzDG) in 2017 which requires social media platforms to remove hate speech and illegal content within strict timeframes [@Kasakowskij2020]. While such measures are implemented with the intention of safeguarding democracy, they can undermine core democratic principles if left unchecked. Democratically elected leaders might also employ digital authoritarian techniques to strengthen their grip on power and erode democratic checks and balances. Victor Orbán of Hungary, for instance, has used similar laws as the NetzDG under the guise of combating "fake news". These measures have been criticized for targeting political opponents and independent media [@Polyák2019]. Based on these variations in how practices of digital authoritarianism are applied in democracies, there is also a divide in the recent literature: while some define digital authoritarianism as tools exclusively applied by authoritarian regimes [@jones2022] or argue that occurrences of digital authoritarianism in democracies are rare exceptions which are usually addressed in public debates followed by new legislation [@Schlumberger2023, p. 19], others re-conceptualize digital authoritarianism as a practice-based and fluid phenomenon which cuts across autocracies and democracies [@GlasiusMichi2018; @MaerzHand2023].
+
+This article contributes to the literature on digital authoritarianism by investigating practices of digital authoritarianism applied in democratic contexts. It adopts the *practice-based definition* of digital authoritarianism from Glasius [-@Glasius2023] and Glasius and Michaelsen [-@GlasiusMichi2018] and conceptually differentiates between manipulative, surveilling, and controlling digital practices. It then empirically studies the harm these practices can have if applied in democratic contexts - even if it is only with low intensity. Similar to offline practices of authoritarianism, online tactics of authoritarianism have the potential to sabotage accountability, infringe on civil liberties, and violate freedom of expression. Prominent examples of such practices applied in democracies include the NSA scandal [@GlasiusMichi2018] or the plethora of Donald Trump's misleading and false claims on Twitter during his first presidency [e.g., @guar2020] and Jair Bolsonaro's disinformation campaigns on the internet during the COVID-19 pandemic [@Recuero2022]. However, we still know little about which practices of digital authoritarianism are applied in democratic contexts, to what extent they are applied, and how this affects democracy, i.e., if their usage is merely occasional and successfully constrained by strong democratic institutions or whether such practices correlate with less government consultations and an increasingly disengaged society, with less rigorous and partisan public administrations, with less civil liberties, and with a decline of freedom of expression in print and broadcast media. 
+
+The article aims to fill this gap by analyzing the effects of practices of digital authoritarianism — whether intended or unintended — on democratic accountability, civil liberties, and freedom of expression.^[When this article refers to democratic accountability, civil liberties, and freedom of expression, it refers to the institutions that uphold these principles — such as mechanisms for oversight, legal protections, independent media, and open public deliberation. The empirical analysis will further clarify how these dimensions are operationalized and measured in the context of this study.] Such core democratic principles had been institutionalized in a range of democracies long before the rise of the internet and include, for example, transparent law-making processes with predictable enforcement, reasonably justified and comprehensive public deliberations before policy changes, freedom of movement, as well as a variety of print and broadcast media. While there is a growing literature on what else correlates with autocratization [@Levitsky2018; @Cianetti2021; @Gerschewski2020; @Boese2021; @Luhrmann2021; @Merkel2021], we know little about how *online* practices of authoritarianism play into the sustained and substantial decline of democratic attributes, as autocratization is defined [@Maerz2023, p. 971; @Luhrmann2019a, p. 1099]. The article illustrates how these digital practices are related to the decline of democratic institutions and thereby links new insights into digital authoritarianism to the literature on autocratization. By using data from the Digital Society Project [DSP, @Mechkova2024] and structural equation modeling, the article finds that surveilling practices have a negative effect on the institutions protecting civil liberties in the analogue world. While manipulative practices directly harm accountability, they also serve as the mechanism through which low-intensity controlling practices undermine freedom of expression in democracies. Overall, the results indicate that especially those digital tactics which manipulate online contents have become a real threat to democracy.
+
+# Practices of digital authoritarianism and the decline of democratic institutions
+
+The rise of the internet has transformed traditional forms of authoritarianism [@Schlumberger2023]. A range of authoritarian regimes proactively use digital technology to expand their rule online and control the digital public sphere [@Guriev2019; @Gunitsky2015]. In addition, authoritarian regimes exercise control over internet infrastructure and seize ownership of Internet Service Providers [ISPs, @Garbe2025]. This comprehensive digital power allows for various manipulations such as flooding social media with disinformation [@Linvill2020] or targeted denial-of-service (DoS) attacks [@Lutscher2020] and entire internet disruptions during crucial times such as elections [@Garbe2023; @Eichhorn2022] to manufacture consent among the population and manipulate public opinion.
+
+Practices of digital authoritarianism have become a key characteristic of modern autocracies and contribute to their survival [@Kendall2020; @Guriev2019]. In democracies, however, they "constitute flaws of the system" [@Schlumberger2023, p. 19] and are a comparatively rare phenomenon. Nevertheless, democratic governments make use of manipulative, surveilling, or controlling digital practices for a variety of reasons, including safeguarding national security, fighting disinformation in social media, protecting democratic institutions and maintaining public order. Examples include the law passed by the French government in 2018, which is similar to the German NetzDG and is aimed at swiftly fighting disinformation, especially during election periods [@Craufurd2019]. Australia has passed a law in 2019, compelling tech companies to provide law enforcement access to encrypted communications to combat terrorism and organized crime [@McGarrity2020]. The United Kingdom has been known for its massive expansion of CCTV cameras for enhancing public safety [@Fussey2008]. However, in other cases, governments — like India and its unproportionally high number of Internet shutdowns, justified as necessary to prevent violence and maintain public order [@Ruijgrok2022], or the Philippines' Anti-Terrorism Act of 2020 [@Mendoza2021] — may also use these tactics to silence political opposition, weaken independent media, and consolidate their hold on power.
+
+Despite these varying intentions, the application of such practices implies that the online public sphere is either manipulated, surveilled, or controlled. By employing them, governments may not be overtly anti-democratic, but they risk eroding fundamental principles of democracy. For conceptualizing these three forms of digital authoritarianism, I rely on Glasius' [-@Glasius2018, p. 531] practice-based definition of authoritarianism which differentiates between the mechanisms of violating human rights and disabling access to information as well as disabling voice. I propose a purposefully broad concept of digital authoritarianism which is not limited to tools of digital repression [e.g., @Feldstein2021] but includes also techniques which manipulate the online public sphere and thereby hinder access to reliable information. Furthermore, this article's definition of digital authoritarianism applies across different regime types and does not differentiate between varying intentions of why governments use it, whether it is to protect democracy or entrench authority, but rather focuses on the outcomes and potential harms that manipulative, surveilling, and controlling digital practices can pose to democracy. If democratic governments employ such practices with the intention to protect democracy but ultimately undermine core democratic institutions, I still classify these as digital authoritarian practices.^[While this article does not uncover the varying intentions behind democratic governments’ use of such practices, it acknowledges that these intentions can influence the outcomes of such practices.]
+
+The three broad forms of digital authoritarianism conceptualized in @tbl-definitions are neither mutually exclusive nor collectively exhaustive. Instead, manipulative, surveilling or controlling forms of digital authoritarianism are frequently applied in combination with each other. Official disinformation in social media, for example, thrives best in contexts with censored political contents. Official disinformation, in turn, can help maintain surveillance covert by misleading the public and deflecting attention from the true methods and extent of surveilling activities. Surveilling social media contents might facilitate a more efficient timing of shutdowns or a temporary increase of censorship by identifying peak periods of dissent. Given the overwhelming speed in which we witness technological progress, the examples listed in @tbl-definitions may soon need to be updated by further and more sophisticated digital and AI-enhanced practices.
+
+
+```{r}
+#| label: tbl-definitions
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+#| tbl-cap: "Manipulative, surveilling, and controlling practices of digital authoritarianism and the mechanisms through which they harm democracy"
+
+library(flextable)
+library(dplyr) 
+library(officer)
+
+text_tbl <- data.frame(
+  Strategic = c("Manipulate", "Surveil", "Control"),
+  Practice = c("Official disinformation in social media, abuse of defamation and copyright law", "Social media surveillance, government access to personal data, cooptation of social media platforms", "Internet censorship and shutdowns"),
+  Mechanism = c("Disabling access to information and voice", "Violating human rights", "Disabling access to information and voice, violating human rights"),
+  Harm = c("Sabotaging accountability", "Infringing on civil liberties", "Violating freedom of expression")
+)
+
+# Create the flextable
+flextable(text_tbl) %>%
+  theme_booktabs() %>%  
+  bold(part = "header") %>%  
+  fontsize(size = 10, part = "header") %>%  
+  font(fontname = "Times New Roman", part = "header") %>%  
+  width(j = 1, width = 1) %>%  
+  width(j = 2, width = 2) %>%  
+  width(j = 3, width = 1.5) %>%  
+  width(j = 4, width = 2) %>%
+  align(j = 1, align = "left", part = "all") %>%  
+  align(j = 2, align = "left", part = "all") %>%  
+  align(j = 3, align = "left", part = "all") %>%  
+  align(j = 4, align = "left", part = "all") %>%
+  set_header_labels(
+    Strategic = "Strategic goal", 
+    Practice = "Digital practice",
+    Mechanism = "Mechanism",
+    Harm = "Potential harm to democracy") %>%  
+  fontsize(size = 9, part = "body") %>%  
+  font(fontname = "Times New Roman", part = "body") 
+```
+
+
+As illustrated by Maerz [-@MaerzHand2023], the use of practices of digital authoritarianism is particularly high among those democracies which experience autocratization. This indicates that there is a link between digital practices of authoritarianism and the decline of democratic institutions which this article will further investigate into. The rich literature on autocratization demonstrates that it often begins with the erosion of institutions that uphold civil liberties, media freedom, and public deliberation [@Bermeo2016; @Mechkova2017; @Waldner2018; @Cianetti2021; @Gerschewski2020; @Luhrmann2019a]. These foundational elements are critical for maintaining a healthy democracy, as they facilitate open discourse and hold leaders accountable [@McKay2021; @Luhrmann2021; @Luhrmann2020]. Given this context, it is essential to examine how digital tools of manipulative, surveilling or controlling nature relate to these early indicators of autocratization. By investigating the effects of practices of digital authoritarianism on democratic accountability, civil liberties, and freedom of expression, this article illuminates the mechanisms through which these practices may exacerbate the initial stages of autocratization and thereby contribute to the deterioration of democratic institutions more generally.
+
+## Manipulative practices and accountability
+
+Manipulative practices of digital authoritarianism concern all attempts by governments to influence and shape contents published on the internet. This is typically done by digitally spreading official disinformation to manufacture a narrative of a "truth" which serves the government best. Official disinformation is thereby defined as false or misleading information which has been *deliberately* spread by governments [@Bennett2018; @Iosifidis2024]. Similar terms to disinformation are misinformation and propaganda. However, misinformation is not deliberately spread, and while propaganda is typically also highly misleading and biased, it might not necessarily contain false information [@Freelon2020]. Apart from this, manipulative forms of digital authoritarianism concern also the abuse of defamation and copyright laws to shape the official narrative of "truth" more effectively. 
+
+Official disinformation can have a re-enforcing effect on declining democratic institutions [@Bennett2018; @MaerzSchneider2021; @Sato2024]. Official disinformation occurred particularly frequent during the COVID-19 pandemic [@Edgell2021]. Beyond the context of the COVID-19 pandemic, the probably most prominent example of official disinformation refers to Donald Trump, especially his false claims about voter fraud during the 2020 presidential elections which he and his allies repeatedly shared via multiple channels [@guar2020]. Other examples include how general disinformation on WhatsApp during election campaigns turned into government-sponsored disinformation in Brazil [@Ozawa2023] and India [@Jaffrelot2020] or the long-standing spread of official disinformation in Hungary [e.g., the 'Stop Brussels' campaign in 2017, @Polyák2024]. 
+
+In the age of the internet, content moderation is a much-discussed topic across different regimes. Hate speech, disinformation, and deepfakes have become growing concerns in the digital sphere [@Labuz2024; @Monsees2023]. Common responses to these concerns are the installation of defamation laws to protect citizens from false statements that harm their reputation. However, such initiatives to fight "fake news" have been also used as a pretext to shape and control the digital space [@Cho2025; @Sombat2022; @Garbe2023a]. Such so-called "fake news laws" are newly installed or adjusted versions of existing defamation and copyright laws which aim to increase the regime's influence to manipulate online contents. Frequently, fake news laws have also "chill effects" on journalists, increasing their levels of self-censorship [@Carson2023]. Fake news laws have been systematically used in autocratizing regimes to remove undesirable information online [@Tan2024]. In Hungary, for example, Victor Orbán applied fake news laws to target political opponents and independent media [@Polyák2019]. Other examples include the former Philippine President Rodrigo Duterte who used fake news laws to brutally silence critics [@Kusaka2022] or how the practices to fight alleged fake news hampered electoral integrity in Thailand [@Pankaew2022].
+
+Digital practices which manipulate online contents systematically hinder access to reliable information and disable voice on the internet [@GlasiusMichi2018]. This is why these practices are expected to have a negative effect on institutions of accountability. Accountability is a central term in democratic theory [@odonnell1998democracy; @przeworski1999democracy; @schedler1999self; @bovens2014oxford]. Borowiak [-@Borowiak2011, p. 10] defines *democratic* accountability as "the principle that the governed should have opportunities to sanction and demand answers from the powers that govern them." Accountability is institutionalized through elections (vertical), checks and balances between institutions (horizontal), and oversight by civil society organizations and media activity (diagonal) [@Mechkova2019b, p. 3; @Luhrmann2020]. Disinformation and "fake news" campaigns before and during elections impact perceptions about election fairness [@Mauk2024]. If the internet is floated with official disinformation and manipulated based on the abuse of defamation laws it becomes more difficult for an engaged society to seek deliberation with the government and hold it accountable for its action because official sources of information are biased, not reliable, and not based on reasoned justifications [@Carson2023]. If governments spread disinformation, they are also not interested in facilitating a fair deliberation process which respects counterarguments and alternative perspectives and which serves the common good [@McKay2021].
+
+*Hypothesis 1: Manipulative practices of digital authoritarianism have a negative effect on institutions of accountability.*
+
+## Surveilling practices and civil liberties
+
+Surveilling practices of digital authoritarianism are methods used by governments for surveillance as well as more subtle and indirect ways of enhancing governments' capacities to access, collect, and keep track of personal data and citizens' activity on the internet. This, for example, includes data laws which substantially violate privacy rights and grant governments the right to access a broad range of their citizens' personal data on the internet. If governments overtake and control entire social media platforms, there is a high potential that they also surveil activity in these applications.
+
+While democracies face greater constraints from judicial and legislative frameworks compared to authoritarian regimes, they still employ digital surveillance. In the United States, the NSA scandal in 2013 revealed the extent of the government's surveillance activities, which included the collection of metadata from millions of phone calls and emails [@Glasius2021]. Another example is Mauritius where amendments to the existing legal ICT framework and initiatives such as the 'Safe City Project' have substantially increased the government's surveillance capacity [@Phokeer2021] and, notably, correlated with the country's recent decline into autocracy [@Kasenally2024]. While being still considered a democracy, India had already normalized digital surveillance measures such as biometric profiling [@Mahapatra2021]. Such practices impact civil liberties, with digital profiling technologies sometimes being discriminatory, infringing on individual autonomy and dignity [@Mann2019]. The mere suspicion of surveillance can lead to self-censorship among journalists and civil society, as seen in Mexico for example, where surveillance with the spyware Pegasus has intimidated both journalists and activists [@Feldstein2021a; @Tanriverdi2018]. Duterte's Philippines is another example where the government has substantially invested in social media surveillance technology [@Feldstein2021a, p. 359]. Commercial spyware to bolster state surveillance capacity was also purchased by a range of other (declining) democracies such as Hungary, Brazil, and Colombia [@Feldstein2021a, p. 358].
+
+Digital surveillance is not per se authoritarian. In democratic contexts, ratified international human rights laws such as the ICCPR [@UN2020] and the country's legal framework to protect individual privacy and civil liberties typically regulate a government's surveillance capacity [@Feldstein2021a, p. 353]. The acceptance of surveillance practices depends on the context in which they are applied and whether they are justified as necessary and proportionate. During emergency situations such as the COVID-19 pandemic, for example, contact tracing apps were widely used in democracies like Norway, Germany and South Korea and - although critically debated - justified to be a necessary tool to handle the crisis [@Eck2020; @Csernatoni2020; @Edgell2021]. If surveillance tools are applied in a discriminatory, unnecessary, and disproportionate way, they go against international human rights laws [@UN2020] and therefore become practices of digital authoritarianism. They then infringe on the autonomy and dignity of individuals and violate civil liberties [@Glasius2021]. Civil liberties are basic rights and political as well as private liberties such as the absence of physical violence by the state, media freedom, freedom of movement, and freedom of religion [@Coppedge2024, p. 428]. 
+
+*Hypothesis 2: Surveilling practices of digital authoritarianism have a negative effect on institutions of civil liberties.*
+
+## Controlling practices and freedom of expression
+
+Controlling practices of digital authoritarianism capture all tactics and techniques which systematically control and restrict information streams on the internet by means of censoring online content, blocking websites, or shutting down the entire internet. 
+
+In democratic settings, censorship of social media and broader internet restrictions are relatively rare and concern mostly democratically legitimized forms of censorship such as restricting the spread of child pornography, highly classified information such as military or intelligence secrets, or defamatory speech.^[The DSP variables used in this article are not concerned with such forms of censorship, @Coppedge2024, Codebook, p. 331] Based on international human rights law [@UN2020], such forms of censorship are justified as necessary to protect the public from harm or seen as a proportionate measure during exceptional times and are subject to legal constraints and oversight [@Edgell2021]. However, in some cases, democratically elected governments have used internet censorship and shutdowns in unjustified or disproportionate ways. Even if applied infrequently or with low-intensity, such harsh and suppressing measures can undermine democratic principles. In Turkey - while still considered a democracy - the government has used internet censorship preceding and following the 2013 Gezi Park protests to suppress dissent and control the flow of information [@Maksimov2018]. India, a country which has been classified as a democracy until recently [@Coppedge2024], has seen numerous internet shutdowns over the past decade, often in response to civil unrest [@Ruijgrok2022].
+
+At the individual level, such restrictions infringe on the autonomy and dignity of the person and thereby violate civil liberties. At the collective level, controlling practices of digital authoritarianism disable access to information and voice in the digital public sphere and, more generally, violate freedom of expression [@GlasiusMichi2018, p. 3804]. Freedom of expression is a core democratic principle which ensures the rights for citizens "to express themselves without danger of severe punishment on political matters [...]" and which is essential for citizens to participate in political life [@Dahl2005, p. 189, 195]. Since controlling practices of digital authoritarianism are either not at all or only applied in low intensities in democratic contexts, their effect on institutions of freedom of expression may be conditional on how much the digital public sphere is manipulated. With increasing control over the online public sphere via censorship and shutdowns, the opportunities to officially manipulate online contents improve. Flooding the digital public sphere with disinformation leaves less opportunities to voice alternative views and therefore violates freedom of expression. 
+
+*Hypothesis 3: The negative effects of controlling practices of digital authoritarianism on institutions of freedom of expression mediate through manipulative practices.*
+
+# Research design
+
+The first part of the empirical investigations is a descriptive analysis to illustrate how common single practices of digital authoritarianism are among democracies and autocracies. The second and third part apply structural equation modeling (SEM). SEM is a suitable methodological framework for putting the above formulated hypotheses of how digital authoritarianism harms democracy to test because it combines core principles of factor analysis and regression techniques and therefore allows to analyze complex relationships among variables [@CastanhoSilva2019]. The first part of SEM is a confirmatory factor analysis (CFA), called *measurement* model, based on which I test if the theoretically conceptualized three forms of digital authoritarianism make sense empirically. The results of CFA illustrate, for example, if the *observed* (=empirically measured) variables for official disinformation and abuse of defamation laws can be meaningfully summarized into the *latent* (=theoretically conceptualized) construct of "manipulative practices" (cf. @fig-sem1). Similar to principal component analysis, CFA is based on pairwise correlation analyses and estimates factor loadings, i.e., standardized correlation coefficients which illustrate how well the selected variables can be summarized into the proposed latent constructs. Subsequently, I test with regression models the hypothesized relationships between the latent constructs of manipulative, surveilling, and controlling digital practices and accountability, civil liberties and freedom of expression in the analogue world. 
+
+The analyses rely on expert-coded data from the Digital Society Project (DSP) [@Mechkova2024] which is integrated into the V-Dem dataset [@Coppedge2024]. Expert-coded data is prone to suffer from coder bias which is why the V-Dem project developed a comprehensive measurement model to correct for such coder bias and other noise in the data [@Pemstein2022]. For a recent discussion about why expert-coded data is particularly useful to assess features of democracy, see @Knutsen2024 and @Miller2024. @tbl-opera2 provides an overview of the questions the expert coders were asked to rate the level of the practices of digital authoritarianism, including the responses for the highest level.
+
+```{r}
+#| label: tbl-opera2
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| tbl-cap: "Selected DSP variables and their underlying questions"
+#| tbl-align: center
+
+library(flextable)
+library(dplyr) 
+library(officer)
+
+# Data for the table
+table_data <- data.frame(
+  Variable = c("Disinformation", "Abuse law", "Social media", "Access data", 
+               "Platforms", "Censorship", "Shutdowns"),
+  question = c("How often do the government and its agents use social media to disseminate misleading viewpoints or false information to influence its own population?",
+               "To what extent do elites abuse the legal system (e.g., defamation and copyright law) to censor political speech online?",
+               "How comprehensive is the surveillance of political content in social media by the government or its agents?",
+               "What does the legal framework to protect Internet users’ privacy and their data stipulate?",
+               "How prevalent is the usage of social media platforms that are wholly controlled by either the government or its agents in this country?",
+               "How frequently does the government censor political information (text, audio, images, or video) on the Internet by filtering (blocking access to certain websites)?",
+               "How often does the government shut down domestic access to the Internet?"),
+  responses = c("Extremely often. The government disseminates false information on all key political issues.",
+                "Regularly. Elites abuse the legal system to remove political speech from the Internet as regular practice.",
+                "Extremely comprehensive. The government surveils virtually all content on social media.",
+                "The legal framework explicitly allows the government to access any type of personal data on the Internet.",
+                "Essentially all social media usage takes place on platforms controlled by the state.",
+                "Extremely often. It is a regular practice for the government to remove political content, except to sites that are pro-government.",
+                "Extremely often. It is a regular practice for the government to shut down domestic access to the Internet.")
+)
+
+# Create the flextable
+flextable(table_data) %>%
+  theme_booktabs() %>%  
+  width(j = 1, width = 1) %>%  
+  width(j = 2, width = 3) %>%  
+  width(j = 3, width = 2.7) %>%  
+  align(j = 1, align = "left", part = "all") %>%  
+  align(j = 2, align = "left", part = "all") %>%  
+  align(j = 3, align = "left", part = "all") %>%  
+  bold(part = "header") %>%  
+  fontsize(size = 10, part = "header") %>%  
+  font(fontname = "Times New Roman", part = "header") %>%  
+  set_header_labels(
+    Variable = "Variable", 
+    question = "DSP question",
+    responses = "Responses for highest level") %>%  
+  fontsize(size = 9, part = "body") %>%  
+  font(fontname = "Times New Roman", part = "body") %>%  
+  fontsize(size = 8, part = "footer") %>%  
+  font(fontname = "Times New Roman", part = "footer") 
+
+
+```
+
+The DSP variables provide information about the political environment of the internet. There is currently no other dataset available which offers such comprehensive data on digital authoritarianism for cross-country comparisons. As independent variables, I use the following: Official disinformation (*Disinformation*) is operationalized with the variable "Government dissemination of false information domestic". "Abuse of defamation and copyright law" which I use for *Abuse law* is a pioneering attempt of capturing the above mentioned fake news laws and their abuse on a cross-country level. While the variable *Social media* is limited to surveilling social media and does not capture surveillance on the internet more broadly, there is currently no such cross-country measure available. For measuring *Access data*, I refer to the variable "Privacy protection by law content" which gives information about the extent to which a country's legal framework allows the government to access personal data on the internet. *Platforms* is measured with the variable "Government social media alternatives" which indicates how prevalent social media platforms are that are wholly controlled by the government. *Censorship* is measured based on "Government internet filtering in practice". This variable is "not concerned with censorship of topics such as child pornography, highly classified information such as military or intelligence secrets, or defamatory speech, unless this sort of censorship is used as a pretext for censoring political information or opinions" [Codebook p. 330f., @Coppedge2024]. For measuring *Shutdowns*, I use "Government internet shut down in practice". This variable gives information about rigorous shutdowns such as instances where a website has been taken entirely offline as well as more subtle instances where access to a website has been intentionally prevented otherwise. 
+
+Operationalization of the three dependent variables is straight-forward with V-Dem's broadly used indices on *Accountability* (v2x_accountability_osp), *Civil liberties* (v2x_civlib), and *Freedom of expression* (v2x_freexp_altinf). While these indices include variables on various institutions in the analogue world, they do not capture digital aspects of these basic democratic principles.[^3] The accountability index, for example, combines sub-indices on vertical (e.g., election qualities), horizontal (e.g., compliance with judiciary, executive oversight), and diagonal accountability (e.g., participation of civil society, engaged society, freedom of print and broadcast media). Civil liberties include political (e.g., media freedom, opposition parties' autonomy) as well as private civil liberties (e.g., freedom of religion, freedom of movement) and two indicators on repression (freedom from torture, freedom from political killings). The index on freedom of expression and alternative sources of information summarizes several variables on freedom of discussion, freedom of print and broadcast media, and academic freedom [Codebook p. 417-420, @Coppedge2024].
+
+[^3]: One exception is a variable on internet censorship efforts on the third aggregated level of the accountability index, hence its influence on the overall index is assumed to be relatively small.
+
+# Descriptive insights
+
+@fig-overview shows how the DSP variables used in this article are distributed as per their level of democracy. The X-axis illustrates V-Dem's Electoral Democracy Index (EDI) [@Coppedge2024] with a red dashed vertical line at 0.5, indicating the borderline between democracy and autocracy [@Luhrmann2018]. The Y-axis counts the number of country-years between 2000-2023. All DSP variables are coded based on experts' ratings on a Likert scale going from no or rare to an extremely often usage. For illustrative purposes, the figure uses a rounded version of DSP/V-Dem's \textit{osp} variables, a linearly translation back to the original ordinal scale of the outcome of V-Dem's measurement model which accounts for disagreement among coders and measurement error [@Pemstein2022]. @tbl-opera in the Appendix provides an overview about variable choice for the descriptive and SEM analyses. @fig-overview-type in the Appendix illustrates the percentages of how common the application of practices of digital authoritarianism is among democracies, autocratizing countries, and autocracies. 
+
+One obvious finding based on this descriptive analysis is that high levels of digital authoritarianism are first and foremost applied in authoritarian settings, while its frequent usage remains a rare phenomenon in democracies. As the different colors in the bar plots show, there are hardly any instances of often (purple) or extremely often (red) applications of any of the practices in the years coded as democracy (EDI>0.5) between 2000-2023. All blue bars, indicating a regular usage, are comparatively low. However, it is nevertheless remarking that a range of democratic governments seem to at least not fully resign from practices of digital authoritarianism (orange bars = rare usage).
+
+```{r}
+#| label: fig-overview
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| fig-cap: "Distribution of DSP variables as per level of democracy."
+#| fig-align: center
+#| fig-keep: 'last'
+#| fig-width: 10  
+#| fig-height: 8  
+#| out-width: '100%'
+#| dpi: 300
+
+# load packages
+library(tidyverse)
+library(tidyr)
+library(forcats)
+library(ggpubr)
+
+
+# select variables from vdem, Version V14
+#devtools::install_github("vdeminstitute/vdemdata@V14")
+#vdem <- vdemdata::vdem %>%
+#  select(country_name, year,
+#         v2x_regime, v2x_polyarchy,
+#         v2smgovfilprc_osp,
+#         v2smgovshut_osp,
+#         v2smgovdom_osp,
+#         v2smdefabu_osp,
+#         v2smgovsmmon_osp,
+#         v2smprivcon_osp,
+#         v2smgovsmalt_osp)
+
+#save(vdem, file = "data/vdem.RData")
+load(file = "data/vdem.RData")
+
+# load episode data, Version V14
+#devtools::install_github("vdeminstitute/ERT@V14")
+#ert <- get_eps() %>%
+#  select(country_name, year,
+#         aut_ep)
+#save(ert, file = "data/ert.RData")
+
+load(file = "data/ert.RData")
+
+# merge data
+ertvdem <- left_join(ert, vdem, by = c("country_name", "year")) %>%
+  drop_na(country_name)
+
+
+# define a function to create digital authoritarianism variables
+create_digaut_variables <- function(data) {
+  result <- data %>%
+    mutate(
+      # Government Internet filtering in practice
+      censor = cut(v2smgovfilprc_osp,
+                        breaks = c(-Inf, 0.5, 1.5, 2.5, 3.5, Inf),
+                        labels = c(0, 1, 2, 3, 4),
+                        include.lowest = TRUE),
+      # Government Internet shut down in practice
+      shut = cut(v2smgovshut_osp,
+                       breaks = c(-Inf, 0.5, 1.5, 2.5, 3.5, Inf),
+                        labels = c(0, 1, 2, 3, 4),
+                       include.lowest = TRUE),
+      # Government social media platforms control 
+      control = cut(v2smgovsmalt_osp,
+                         breaks = c(-Inf, 0.5, 1.5, 2.5, 3.5, Inf),
+                        labels = c(0, 1, 2, 3, 4),
+                         include.lowest = TRUE),
+      # Government dissemination of false information domestic
+      disinfo = cut(v2smgovdom_osp,
+                       breaks = c(-Inf, 0.5, 1.5, 2.5, 3.5, Inf),
+                        labels = c(0, 1, 2, 3, 4),
+                        include.lowest = TRUE),
+      # Abuse of defamation and copyright law by elites 
+      abuse = cut(v2smdefabu_osp,
+                      breaks = c(-Inf, 0.5, 1.5, 2.5, 3.5, Inf),
+                        labels = c(0, 1, 2, 3, 4),
+                      include.lowest = TRUE),
+      # Government social media monitoring
+      monitor = cut(v2smgovsmmon_osp,
+                          breaks = c(-Inf, 0.5, 1.5, 2.5, 3.5, Inf),
+                        labels = c(0, 1, 2, 3, 4),
+                           include.lowest = TRUE),
+      # Governments can access (and potentially abuse) many types of personal data
+      access = cut(v2smprivcon_osp,
+                        breaks = c(-Inf, 0.5, 1.5, 2.5, 3.5, Inf),
+                        labels = c(0, 1, 2, 3, 4),
+                        include.lowest = TRUE)) %>%
+    select(
+      country_name, year, v2x_polyarchy,
+      disinfo, abuse, monitor, access, censor, shut, control) %>%
+    drop_na()
+
+  return(result)
+}
+
+
+# and all for overview plot 
+all <- ertvdem %>%
+  filter(year > 1999) %>%
+  create_digaut_variables()
+
+# Define colors and original order
+original_order <- c("disinfo", "abuse", "monitor", "access", "control", "censor", "shut")
+cb_colors <- c("gray", "#E69F00", "#56B4E9", "#882255", "red")
+
+# Create histograms with larger plot dimensions and improved font size
+histograms <- all %>%
+  pivot_longer(cols = c(4:10), names_to = "type", values_to = "val") %>%
+  mutate(type = factor(type,
+                       levels = original_order,
+                       labels = c("Disinformation",
+                                  "Abuse law",
+                                  "Social media surveillance",
+                                  "Access data",
+                                  "Platforms",
+                                  "Censorship",
+                                  "Shutdowns"),
+                       ordered = TRUE),
+         val = factor(val,
+                      levels = c(4, 3, 2, 1, 0),
+                      labels = c("Never", "Rarely", "About half the time", "Often", "Extremely often"))) %>%
+  ggplot(aes(v2x_polyarchy, fill = val)) +
+  geom_histogram(binwidth = 0.02, color = "black", size = 0.1) +  
+  scale_fill_manual(values = cb_colors, name = "") +
+  facet_wrap(~ type, scales = "free", ncol = 2) +  
+  labs(title = "", y = "", x = "") +  
+  theme_minimal(base_size = 14) + 
+  theme(legend.position = "bottom",  
+        legend.title = element_blank(),
+        legend.text = element_text(size = 12),  
+        strip.text = element_text(size = 14)) +  
+  geom_vline(xintercept = 0.5, color = "red", linetype = "dashed", size = 1)  
+
+# Display histograms
+histograms
+
+
+```
+
+The most notable exceptions of frequent or even extremely frequent users of disinformation among democracies are Brazil (2019-2022), Bolivia (2023), Colombia (2019, 2021), El Salvador (2020), Guatemala (2021), Guyana (2022), Hungary (2015-2017), the Maldives (2012), Mexico (2019-2023), The Philippines (2016-2017), Poland (2023), Slovenia (2021), and Sri Lanka (2021). Frequent abuse of defamation and copyright law occurs in The Philippines (2000-2003, 2010-2017), and Thailand (2000-2005). Frequent users of online surveillance among democracies are Bhutan (2008-2023), Burkina Faso (2020-2021), Colombia (2020-2021), Guyana (2023), the Maldives (2012), Mauritius (2014-2022), the Philippines (2016-2017), and Sri Lanka (2022). Government access to personal data is common in Bhutan (2022-2023), Fiji (2003-2005), and Zambia (2010-2012). Highly frequent control over social media platforms is exercised by Bhutan (2008-2023). Censorship of online content has been frequently used in Turkey (2011-2012), for example, preceding the Gezi Park protests in 2013 and the country's subsequent slide into autocracy. While the highly restricting measure of internet shutdowns remains a rare phenomenon in democracies, there is nevertheless a low number of these formally democratic governments which regularly use internet shutdowns. This includes Burkina Faso (2001-2021), Bhutan (2021-2023), India (2009-2016), and Nicaragua (2000-2006).
+
+Interestingly, all these exceptions are either classified as autocratizing countries [@Maerz2023] or have already comparatively low levels on the EDI which suggests that there might be a relationship between the application of practices of digital authoritarianism and the quality of democracy. However, while the descriptive analysis in @fig-overview highlights extreme cases, it does not provide further insights into the numerous cases of less frequent applications in democracies and their effects on core democratic institutions such as accountability, civil liberties, and freedom of expression. The SEM analysis in the following section will provide a more nuanced understanding of these relationships. 
+
+# Structural equation modeling
+
+@fig-sem1 summarizes the results of the first part of the SEM, the confirmatory factor analysis (CFA). The figure shows a graphical summary of how well the *latent* constructs of digital authoritarianism in @tbl-definitions summarize the *observed* variables. The single-headed arrows indicate which variables load into the latent constructs, the values attached to the arrows are the factor loadings or standardized factor coefficients. The double-headed arrows with their attached values indicate correlations. The standardized factor coefficients are estimated with fixed effects (country and year) and are all statistically significant ($p$\<0.001), robust standard errors are clustered at the country level. The factor loadings show high values, indicating that the variables are indeed strongly related to the three proposed factors. The lowest value in this regard has the variable "Access data". While 0.64 is still an acceptable factor loading on a scale from 0 to 1, the Appendix runs alternative models without "Access data" and results do not greatly differ. One explanation why this variable has a lower fit is that it indicates merely the *potential* for data abuse and is therefore distinct from the other variables which measure de facto applied practices.
+
+```{r}
+#| label: fig-sem1
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| fig-cap: "Results from structural equation modeling (I)."
+#| fig-align: center
+#| fig-keep: 'last'
+#| out-width: '60%'
+#| dpi: 300
+
+
+# load packages
+library(tidyverse)
+library(lavaan)
+library(semPlot)
+library(semptools)
+library(lavaanPlot)
+library(sem)
+
+
+# load prepared data (digaut_prepsemV14.R)
+load(file = "data/digaut_lags.RData")
+
+# run CFA model without controls but with fixed effects, 
+model1b <- ' 
+# measurement model
+Manipulate =~ Disinfo + Abuse
+Surveil =~ Surveillance + Privacy + Coopt
+Control =~ Censor + Shut
+
+Manipulate ~ year + country_name 
+Surveil ~ year + country_name
+Control ~ year + country_name
+
+         '
+fit1b <- lavaan::cfa(model1b, data = digaut, std.ov = TRUE, std.lv = TRUE, missing = "ML", se = "robust", cluster = "country_name")
+#summary(fit1b, standardized=T, fit.measures=T)
+
+# exclude fixed effects variables in the graph
+no <- semptools::drop_nodes(
+  object = semPlotModel(fit1b),
+  nodes = c("year", "country_name"))
+# illustrate
+vis <- semPlot::semPaths(no, whatLabels = "std",
+                         title = FALSE, 
+                         thresholds = F,
+                         sizeMan = 10, 
+                         nodeLabels = c("Disinformation", "Abuse law", "Social media", "Access data",
+                                        "Platforms", "Censorship", "Shutdowns", "Manipulate", "Surveil", "Control"),
+                         rotation = 1,
+                         nCharNodes = 20, 
+                         intercepts=FALSE,
+                         residuals=FALSE,
+                         fade = F,
+                         reorder = F)
+
+
+```
+
+Overall, the data of the selected DSP variables in 115 democracies from 2000-2023 [based on RoW, @Luhrmann2018] shows great consistency with this article's concept of digital authoritarianism and thereby empirically confirms that (1) all the proposed practices strongly relate to digital authoritarianism and (2) can be meaningfully summarized into three higher-level constructs of manipulative, surveilling, and controlling practices. Notable are the high correlation coefficients between the three proposed forms of digital authoritarianism (all \> 0.8). This high correlation suggests that the three constructs are all dimensions of one higher-order factor, namely digital authoritarianism, which lends further support to this article's conceptualization and highlights that these three forms are not mutually exclusive.
+
+```{r}
+#| label: tbl-sem2
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| tbl-cap: "Results from structural equation modeling (II)"
+
+# load packages
+library(tidyverse)
+library(broom)      
+library(lavaan)
+library(semPlot)
+library(semptools)
+library(lavaanPlot)
+library(sem)
+library(purrr)
+library(flextable)
+library(officer)
+
+
+# with controls
+model1 <- ' 
+# measurement model
+Manipulate =~ Disinfo_1 + Abuse_1 
+Surveil =~ Moni_1 + Privacy_1 + Coopt_1
+Control =~ Censor_1 + Shut_1
+
+   # regressions
+  Account ~ Manipulate +Judical_1+Legis_1+Conflicts_1+Mobil_1+Pop_1+GDPPC_1
+  CLiber ~ Surveil +Judical_1+Legis_1+Conflicts_1+Mobil_1+Pop_1+GDPPC_1
+  Free ~ c*Control + b*Manipulate +Judical_1+Legis_1+Conflicts_1+Mobil_1+Pop_1+GDPPC_1
+  
+   # mediators
+  Manipulate ~ a*Control
+
+  # indirect effects (a*b)
+  ab := a*b
+  totalcont := c + (a*b)
+  
+  # covariances
+  Surveil ~~ Control
+  Manipulate ~~ Surveil
+
+         '
+
+fit1 <- lavaan::sem(model1, data = digaut, std.ov = FALSE, fixed.x = TRUE, missing = "ml", se = "robust", cluster = "country_name")
+#summary(fit1, standardized=T, fit.measures=T)
+
+# make a nice table
+library(modelsummary)
+library(stringr)
+library(gt)
+library(gtsummary)
+
+mod_list <- modelsummary(fit1, output = "modelsummary_list")
+mod_data <- as.data.frame(mod_list[1])
+names(mod_data) = gsub(pattern = "tidy.", replacement="", x=names(mod_data))
+
+mod_data <- mod_data %>%
+  filter(str_detect(term, "year", negate = TRUE)) %>%
+  filter(str_detect(term, "country_name", negate = TRUE))
+
+mod_account <- mod_data %>%
+  filter(str_detect(term, "^Account"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value) %>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_account <- list(
+  tidy = mod_account)
+class(mod_account) <- "modelsummary_list"
+
+mod_liber <- mod_data %>%
+  filter(str_detect(term, "^CLiber"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value)%>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_liber <- list(
+  tidy = mod_liber)
+class(mod_liber) <- "modelsummary_list"
+
+mod_free <- mod_data %>%
+  filter(str_detect(term, "^Free"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value)%>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_free <- list(
+  tidy = mod_free)
+class(mod_free) <- "modelsummary_list"
+
+mod_indirect <- mod_data %>%
+filter(str_detect(label, "^a") |
+       component == "Defined")%>%
+  select(-statistic, -label, -group, -s.value)
+mod_indirect <- list(
+  tidy = mod_indirect)
+class(mod_indirect) <- "modelsummary_list"
+  
+mynames <- c(
+  "Manipulate" = "Manipulate (b)",
+  "Surveil" = "Surveil",
+  "Control" = "Control (c)",
+  "Judical_1" = "Judicial constrains",
+  "Legis_1" = "Legislative constraints",
+  "Mobil_1" = "Protests",
+  "Conflicts_1" = "Conflicts",
+  "GDPPC_1" = "GDP per capita (logged)",
+  "Pop_1" = "Population (logged)",
+  "Manipulate ~ Control" = "Control->Manipulate (a)",
+  "ab := a*b" = "a*b",
+  "totalcont := c+(a*b)" = "Total effect c'=c+(a*b)"
+)
+
+tab <- modelsummary(list("Accountability" = mod_account, "Civil liberties" = mod_liber, "Freedom of expression" = mod_free, "Indirect effects" = mod_indirect), estimate = "{estimate}{stars}",
+             gof_map = NA, coef_map = mynames,
+             notes = c('Maximum likelihood models with fixed effects (country and year), robust standard errors are clustered at the country-level.',
+                       'The table omits CFA and covariances (illustrated in Figure 3).',
+                       'CFI=0.956, RMSEA=[0.056; 0.128], SRMR=0.039 (CFA only),
+                       CFI=0.930, RMSEA=[0.099; 0.154], SRMR=0.055 (excluding controls),
+                       CFI=0.863, RMSEA=[0.118; 0.151], SRMR=0.205 (including controls).'),
+             output = "huxtable",
+             title = "Results from structural equation modeling (II)")
+# use this for word output and change to huxtable above
+huxtable::as_flextable(tab) %>% 
+  theme_booktabs() %>%  
+  bold(part = "header") %>%  
+  fontsize(size = 10, part = "header") %>%  
+  flextable::fontsize(size = 9) %>%  
+  flextable::font(fontname = "Times New Roman", part = "all") %>%  
+  autofit()
+
+# check for multicollinearity
+#library(car)
+#vif(lm(Account ~ Disinfo_1 + Abuse_1  + Judical_1 + Legis_1 + Conflicts_1 + Mobil_1 + Pop_1 + GDPPC_1, data = digaut))
+#vif(lm(CLiber ~ Moni_1 + Privacy_1 + Coopt_1 + Judical_1 + Legis_1 + Conflicts_1 + Mobil_1 + Pop_1 + GDPPC_1, data = digaut))
+#vif(lm(Free ~ Censor_1 + Shut_1 + Disinfo_1 + Abuse_1 + Judical_1 + Legis_1 + Conflicts_1 + Mobil_1 + Pop_1 + GDPPC_1, data = digaut))
+# no particularly high VIFs
+```
+
+@tbl-sem2 summarizes the results of the second part of the SEM, a series of maximum likelihood models with the latent constructs of manipulative, surveilling, and controlling practices of digital authoritarianism as independent variables and indices on accountability, civil liberties, and freedom of expression as dependent variables in a sample of 115 democracies (2000-2023, n=2134 country-years). The flexible framework of SEM allows to estimate separate models for each of the dependent variables within the main SEM model. Therefore, @tbl-sem2 illustrates the results of three models: the first column shows the coefficients for the model with manipulative practices as independent variable and accountability as dependent variable, including controls. The second column is the model with surveilling practices as independent and civil liberties as dependent variable. The third and fourth column estimate the direct effects of controlling and manipulative practices and the indirect effects of controlling practices on freedom of expression. @tbl-sem-bi in the Appendix illustrates bivariate models (excluding controls).
+
+The health of core democratic institutions such as accountability, civil liberties, and freedom of expression are complex phenomena to which a range of different factors contribute [@Coppedge2011; @Cianetti2021; @Gerschewski2020]. To adjust for such political and economic factors identified in the literature as potential confounders, I include the following control variables: judicial and legislative constraints on the executive [@Boese2021], conflicts [@MaerzConflict2023; @Gleditsch2002; @Davies2024], protests [@Coppedge2024], and GDP as well as population size measures [@Knutsen2022; @Worldbank2024]. All independent and control variables are lagged for one year. Given that the digital world changes comparatively quickly, a one-year lag seemed adequate. However, @fig-crossacc, @fig-crossmon, and @fig-crossfree in the Appendix test further lags.
+
+The results of the main SEM model suggest that manipulative practices negatively affect accountability on a statistically significant level, confirming the first hypothesis. Manipulative practices also harm freedom of expression. Surveilling practices significantly affect civil liberties and thereby provide support for the second hypothesis. The negative effects of controlling practices on freedom of expression mediate through manipulative practices (Hypothesis 3).
+
+@fig-effect further illustrates the indirect effects of controlling practices of digital authoritarianism. The graph shows that controlling practices are indeed not directly related to the quality of freedom of expression in the analogue world (c=0.018). However, controlling practices have a statistically significant positive effect on manipulative practices ($a=0.886^{\ast\ast\ast}$) and manipulative practices negatively affect conventional institutions of freedom of expression ($b=-0.055^{\ast\ast\ast}$). The total effect of controlling practices on freedom of expression mediated through manipulative practices sums up to $c'=-0.031^{\ast\ast\ast}$.
+
+<!--
+::: {#fig-effect}
+``` {tikz}
+#| cache: TRUE
+#| echo: FALSE
+#| warning: FALSE
+#| message: FALSE
+#| out-width: '70%'
+
+\usetikzlibrary{positioning}
+\tikzset{mynode/.style={draw,text width=1.2in,align=center}
+}
+
+  \begin{tikzpicture}
+    \node[mynode] (m){Manipulate};
+    \node[mynode,below left=of m](a) {Control};
+    \node[mynode,below right=of m](b) {Freedom of expr.};
+    \draw[-latex] (a.north) -- node[auto,font=\scriptsize] {$a=0.886^{\ast\ast\ast}$ } (m.west);
+    \draw[-latex] (m.east) -- node[auto,font=\scriptsize] {$b=-0.055^{\ast\ast\ast}$} (b.north);
+    \draw[-latex] (a.east) --
+            node[below=3mm,font=\scriptsize,align=center] {$c'=-0.031^{\ast\ast\ast}$ \\ ($c=0.018)$} (b.west);
+  \end{tikzpicture}
+```
+
+How controlling practices affect freedom of speech in democracies
+:::
+-->
+
+
+![How controlling practices affect freedom of expression in democracies](figs/fig-effect.png){#fig-effect}
+
+
+Robustness checks of the SEM results include the following: First, I comprehensively tested for reverse causality to verify the model's assumed causal direction of practices of digital authoritarianism affecting conventional democratic institutions and circumvent the potential problem of misspecified temporal lags. While the main SEM model simplifies this relationship and implies a unidirectional causal path, the additional maximum likelihood SEM cross-lagged panel models in the Appendix (@fig-crossacc, @fig-crossmon, and @fig-crossfree) illustrate coefficients including potentially reciprocal effects, auto-regressive coefficients, and time-specific correlations [@Leszczensky2022; @Bollen2010]. The findings from these robustness tests suggest that while there are reciprocal effects to some degree, the digital and not yet formally institutionalized practices have a statistically more significant effect on the established institutional setting in the analogue world. Second, I tested alternative model specifications, e.g., the Appendix illustrates CFA and SEM models (@fig-cfanopriv and @tbl-semnopriv) without the observed variable for "Access data" as its factor loading in the main CFA is comparatively low.[^7]
+
+[^7]: The main SEM model has a relatively good model fit. As indicated in the notes of @tbl-sem2, I rely on scaled and robust versions of commonly used fit indicators for SEM [@Maydeu-Olivares2017; @Hoyle2012]. While the CFI and SRMR values indicate good fit, at least as long as the partly skewed control variables are not included, the RMSEA values, especially the upper ones, indicate a mild misspecification. Diagnostics in the replication files suggest that the reason for the slightly raised RMSEA values may be multicollinearity among some of the variables, in particular Abuse law, Censorship, and Shutdowns. However, their vif values remain below 5, hence these are no serious cases of multicollinearity. Replication files are available on the author's Github page.
+
+# Discussion
+
+This article illustrated how manipulative practices of digital authoritarianism pose a real threat to democracy. Official disinformation in social media, for example, disables access to reliable information and heavily restricts other deliberative components of democracy which enable an engaged society. In combination with so-called "fake news" laws, such practices sabotage accountability (Hypothesis 1) - especially diagonal accountability which concerns the extent to which governments are accountable to the media and civil society [@Luhrmann2020]. This is in line with other findings on the importance of accountability for democracy [@Mechkova2019b], on the anti-deliberative effects of disinformation [@McKay2021] and on how official disinformation campaigns are positively related to autocratization [@MaerzSchneider2021; @Sato2024]. 
+
+The analysis further showed that digital practices such as social media surveillance and government access to personal data on the internet have a negative impact on civil liberties in the analogue world (Hypothesis 2). The negative effects of controlling practices of digital authoritarianism on conventional institutions of freedom of expression mediate through the application of manipulative practices, confirming Hypothesis 3. Filtering and restricting the online public sphere provides more space for official disinformation and leaves less opportunity to unmask the manipulative nature of "fake news" laws [@Bradshaw2018]. This bolstering of manipulative practices by means of controlling the online public sphere has a negative effect on freedom of expression as it leaves little or no room for free, diverse, and independent media and other forums for discussions which are likely to compete with official narratives [@Pentney2022]. @McKay2021 [p. 708] called such negative effects of official disinformation campaigns corrosive falsehood and epistemic cynicism. While the first promotes misperceptions and undermines alternative (more reliable) sources of information, the latter describes a process during which citizens become hostile or indifferent to accounts with higher epistemic demands if flooded with official disinformation.
+
+The size of the estimated negative effects for all three forms of digital authoritarianism on features of democracy remains relatively small. However, also such small changes can be consequential regarding the pathway of democracy in the respective country. With one unit increase on the variable of manipulative practices, the model predicts a drop of the accountability indicator by 0.021 which is roughly equivalent to how much the accountability institutions dropped on average in Hungary between 2014 and 2016. Regarding the effect size of manipulative practices on freedom of expression, there may be a drop which compares to how much freedom of expression worsened in Hungary alone in the year from 2014 to 2015. With one unit increase on the variable of surveilling practices, we can expect to see institutions protecting civil liberties to decline similarly as they have done in the first three years of the Orbán government in Hungary. And one unit increase on the controlling practices mediated through manipulative practices adds up to a drop on freedom of expression which compares to how much these institutions suffered already in the first year of the Orbán government (2010).
+
+The analysis in this paper is constrained by the scarce data which is available on digital authoritarianism. The DSP variables are useful proxies for several of the concepts measured in this paper. However, as discussed above, expert-coded data might suffer from coder bias. In addition, official disinformation is only measured in social media, covering merely a small part of the vast digital arena which can be used to spread manipulated contents.
+
+# Conclusion
+
+This paper conceptualized a practice-based approach to digital authoritarianism and analyzed how manipulative, surveilling, and controlling digital practices affect conventional democratic institutions of accountability, civil liberties, and freedom of expression. The theoretical part of the paper argued that while digital authoritarian practices have become core characteristics in modern autocracies, they are also applied by democratic governments. Even if these are mostly low-intensity applications, they can have negative effects on democracy. The empirical part of the paper analyzed digital authoritarianism in democratic contexts in a more systematic fashion and found evidence that manipulative practices of digital authoritarianism have become a significant threat to democracy. The analysis showed for a sample of 112 democracies (2000-2023) that manipulative practices such as official disinformation and abuse of defamation laws have direct negative effects on democratic accountability and serve as a mechanism through which low-intensity controlling practices undermine freedom of expression. Apart from this, the results of the article suggest that digital practices of surveillance have a negative impact on civil liberties in the analogue world.
+
+How practices of digital authoritarianism are applied in democracies presents a field of research which has not yet received much attention. However, considering the ongoing revolution of artificial intelligence it remains a pressing issue to comprehensively study and further investigate into how different political regimes use and abuse newly invented technologies. Based on this, I see several avenues for future research: First, there is a need to improve cross-country datasets on digital authoritarianism which go beyond expert-coded surveys. Second, and linked to that, such data collection efforts should include not only an assessment of how digital authoritarian practices are applied in social media but also on the internet more broadly, including an assessment of the intentions behind making use of these practices. Lastly, further analyses on the varying mechanisms of how digital practices interact with institutions in the analogue world could help to better understand how the virtual realm increasingly permeates into the public spheres of both democracies and autocracies alike.
+
+\newpage
+
+# Appendix
+
+
+
+```{r}
+#| label: tbl-opera
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| tbl-cap: "Operationalization of DSP variables (Mechkova et al., 2024) and variable versions used"
+#| tbl-align: center
+
+
+# Data for the table
+table_data <- data.frame(
+  Variable = c("Disinformation", "Abuse law", "Social media", "Access data", 
+               "Platforms", "Censorship", "Shutdowns"),
+  dsp = c("Government disinformation of false information domestic", 
+                       "Abuse of defamation and copyright law by elites", 
+                       "Government social media monitoring", 
+                       "Privacy protection by law content", 
+                       "Government social media alternatives", 
+                       "Government internet filtering in practice", 
+                       "Government internet shut down in practice"),
+  des = c("v2smgovdom_osp", "v2smdefabu_osp", "v2smgovsmmon_osp", 
+                             "v2smprivcon_osp", "v2smgovsmalt_osp", "v2smgovfilprc_osp", 
+                             "v2smgovshut_osp"),
+  reg = c("v2smgovdom", "v2smdefabu", "v2smgovsmmon", "v2smprivcon", 
+                 "v2smgovsmalt", "v2smgovfilprc", "v2smgovshut")
+)
+
+# Create the flextable
+flextable(table_data) %>%
+  theme_booktabs() %>%  
+  bold(part = "header") %>%  
+  fontsize(size = 10, part = "header") %>%  
+  set_header_labels(
+    Variable = "Variable", 
+    dsp = "DSP, long name", 
+    des = "Descriptive", 
+    reg = "Regression") %>%  
+  flextable::fontsize(size = 9) %>%  
+  flextable::font(fontname = "Times New Roman") %>% 
+autofit()
+
+```
+
+```{r}
+#| label: fig-overview-type
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| fig-cap: "Percentage of democracies, declining democracies, and autocracies applying practices of digital authoritarianism (2000-2023), regime types based on ERT and RoW data (Maerz et al., 2023, Lührman et al., 2018)."
+#| fig-align: center
+#| fig-keep: 'last'
+#| out-width: '90%'
+#| dpi: 300
+
+
+# apply the function for each category
+regdem_digaut_democracies <- ertvdem %>%
+  filter(year > 1999, v2x_regime > 1, aut_ep == 0) %>%
+  create_digaut_variables()
+
+regdem_digaut_declining_democracies <- ertvdem %>%
+  filter(year > 1999, v2x_regime > 1, aut_ep == 1) %>%
+  create_digaut_variables()
+
+regdem_digaut_autocracies <- ertvdem %>%
+  filter(year > 1999, v2x_regime < 2) %>%
+  create_digaut_variables()
+
+
+# Improved function for plotting
+create_digaut_plot <- function(data, category, total_countries, include_legend = FALSE) {
+  original_order <- c("disinfo", "abuse", "monitor", "access", "control", "censor", "shut")
+
+  # Original color-blind friendly colors
+  cb_colors <- c("gray", "#E69F00", "#56B4E9", "#882255", "red")
+
+  plot <- data %>%
+    pivot_longer(cols = original_order,
+                 names_to = "type", values_to = "val") %>%
+    mutate(type = factor(type,
+                         levels = original_order,
+                         labels = c("Disinformation",
+                                    "Abuse of Law",
+                                    "Social media surveillance",
+                                    "Access to Data",
+                                    "Platform Control",
+                                    "Censorship",
+                                    "Shutdowns"),
+                         ordered = TRUE),
+           val = factor(val,
+                        levels = c(4, 3, 2, 1, 0),
+                        labels = c("Never", "Rarely", "About half the time", "Often", "Extremely often"))) %>%
+    group_by(type, val) %>%
+    tally() %>%
+    group_by(type) %>%
+    mutate(per = n / nrow(data) * 100) %>%
+    ggplot(aes(x = per, y = forcats::fct_rev(type), fill = val)) + 
+    geom_bar(stat = "identity", position = "stack", width = 0.6) +
+    scale_fill_manual(values = cb_colors, name = "Frequency of Use") +  
+    theme_minimal(base_size = 7) +  
+    xlab("Percentage of Countries (%)") +
+    ylab(NULL) + 
+    scale_y_discrete(limits = rev(levels(data$type))) +
+    scale_x_continuous(breaks = seq(0, 100, 10)) +
+    ggtitle(paste(category, " (", total_countries, " countries)", sep = "")) +
+    theme(axis.text.y = element_text(hjust = 0.5),
+          legend.position = ifelse(include_legend, "bottom", "none"),  
+          text = element_text(size = 7),  
+          plot.title = element_text(size = 8, face = "bold", hjust = 0.5),  
+          panel.grid.major = element_line(color = "gray85"))  
+  
+  return(plot)
+}
+
+# Count total countries in each category
+total_countries_democracies <- n_distinct(regdem_digaut_democracies$country_name)
+total_countries_declining_democracies <- n_distinct(regdem_digaut_declining_democracies$country_name)
+total_countries_autocracies <- n_distinct(regdem_digaut_autocracies$country_name)
+
+# Create plots
+plot_democracies <- create_digaut_plot(regdem_digaut_democracies, "Democracies", total_countries_democracies, include_legend = FALSE)
+plot_declining_democracies <- create_digaut_plot(regdem_digaut_declining_democracies, "Declining Democracies", total_countries_declining_democracies, include_legend = FALSE)
+plot_autocracies <- create_digaut_plot(regdem_digaut_autocracies, "Autocracies", total_countries_autocracies, include_legend = TRUE)  # Include legend for the last plot
+
+# Create grid with larger dimensions
+combined_plot <- ggpubr::ggarrange(plot_democracies, plot_declining_democracies, plot_autocracies,
+                  common.legend = TRUE,  
+                  legend = "bottom",      
+                  align = "hv",           
+                  nrow = 3,               
+                  heights = c(1, 1, 1))   
+
+combined_plot
+
+```
+
+```{r}
+#| label: fig-crossacc
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| fig-cap: "ML-SEM cross-lagged panel model ($L$ = 3) to test for reverse causality between the latent variable 'Manipulate' and the observed variable 'Accountability'"
+#| fig-align: center
+#| fig-keep: 'last'
+#| out-width: '50%'
+#| dpi: 300
+
+
+modelacc <- ' 
+Manipulate =~ Disinfo + Abuse 
+Manipulate_1 =~ Disinfo_1 + Abuse_1 
+Manipulate_2 =~ Disinfo_2 + Abuse_2 
+Manipulate_3 =~ Disinfo_3 + Abuse_3 
+
+           # cross-lagged model
+            Manipulate ~ Manipulate_1 + Account_1 
+            Manipulate_1 ~ Manipulate_2 + Account_2 
+            Manipulate_2 ~ Manipulate_3 + Account_3 
+            
+            Account ~ Account_1 + Manipulate_1  
+            Account_1 ~ Account_2 + Manipulate_2  
+            Account_2 ~ Account_3 + Manipulate_3 
+            
+            Manipulate ~~ Account
+            Manipulate_1 ~~ Account_1
+            Manipulate_2 ~~ Account_2
+            Manipulate_3 ~~ Account_3
+         '
+
+fitacc <- lavaan::sem(modelacc, data = digaut, fixed.x = FALSE, missing = "ml")
+#summary(fitacc, standardized=T, fit.measures=T)
+
+m <- matrix(NA, 2, 8)
+#m[1, ] <- c("Disinfo", "Abuse", "Disinfo_1", "Abuse_1", "Disinfo_2", "Abuse_2", "Disinfo_3", "Abuse_3")
+m[1, ] <- c("Manipulate", NA, "Manipulate_1", NA, "Manipulate_2", NA, "Manipulate_3", NA)
+m[2, ] <- c("Account", NA, "Account_1", NA, "Account_2", NA, "Account_3", NA)
+
+# exclude variables to construct latents
+no <- semptools::drop_nodes(
+  object = semPlotModel(fitacc),
+  nodes = c("Disinfo", "Abuse", "Disinfo_1", "Abuse_1", "Disinfo_2", "Abuse_2", "Disinfo_3", "Abuse_3", "year", "country_name"))
+
+# visualize model
+visacc <- semPlot::semPaths(no, 
+                            whatLabels = "std",
+                            nCharNodes = 0, nCharEdges = 0,
+                            layout = m,
+                            sizeMan = 10,
+                            intercepts=FALSE,
+                            residuals=FALSE,
+                            thresholds = FALSE,
+                            fade = F,
+                            reorder = FALSE,
+                            pastel = T,
+                            edge.label.position = 0.4)
+vissigacc <- mark_sig(visacc, fitacc)
+my_label_list_acc <- list(list(node = "Account", to = "Accountability"),
+                          list(node = "Account_1", to = "Accountability_1"),
+                          list(node = "Account_2", to = "Accountability_2"),
+                          list(node = "Account_3", to = "Accountability_3"))
+vislabelacc <- change_node_label(vissigacc, my_label_list_acc)
+plot(vislabelacc)
+
+
+```
+
+```{r}
+#| label: fig-crossmon
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| fig-cap: "ML-SEM cross-lagged panel model ($L$ = 3) to test for reverse causality between the latent variable 'Surveil' and the observed variable 'Civil liberties'"
+#| fig-align: center
+#| fig-keep: 'last'
+#| out-width: '50%'
+#| dpi: 300
+
+# Surveil vs CLiber
+modellib <- ' 
+Surveil =~ Moni + Privacy + Coopt
+Surveil_1 =~ Moni_1 + Privacy_1 + Coopt_1
+Surveil_2 =~ Moni_2 + Privacy_2 + Coopt_2
+Surveil_3 =~ Moni_3 + Privacy_3 + Coopt_3
+
+      # cross-lagged model
+      Surveil ~ Surveil_1 + CLiber_1 
+      Surveil_1 ~ Surveil_2 + CLiber_2 
+      Surveil_2 ~ Surveil_3 + CLiber_3 
+
+      CLiber ~ CLiber_1 + Surveil_1 
+      CLiber_1 ~ CLiber_2 + Surveil_2 
+      CLiber_2 ~ CLiber_3 + Surveil_3 
+
+      Surveil ~~ CLiber
+      Surveil_1 ~~ CLiber_1
+      Surveil_2 ~~ CLiber_2
+      Surveil_3 ~~ CLiber_3
+'
+
+fitlib <- lavaan::sem(modellib, data = digaut, fixed.x = FALSE, missing = "ml", se = "robust")#, cluster = "country_name")
+#summary(fitlib, standardized=T)
+#fitMeasures(fitlib, c("cfi", "rmsea", "srmr"))
+
+m <- matrix(NA, 2, 12)
+
+m[1, ] <- c("Surveil", NA,NA, "Surveil_1", NA,NA, "Surveil_2", NA,NA, "Surveil_3", NA,NA)
+m[2, ] <- c("CLiber", NA,NA, "CLiber_1", NA,NA, "CLiber_2", NA,NA, "CLiber_3", NA,NA)
+# exclude variables to construct latents
+no <- semptools::drop_nodes(
+  object = semPlotModel(fitlib),
+  nodes = c("Moni", "Privacy", "Coopt", "Moni_1", "Privacy_1", "Coopt_1", "Moni_2", "Privacy_2", "Coopt_2", "Moni_3", "Privacy_3", "Coopt_3", "year", "country_name"))
+
+# visualize model
+vismon <- semPlot::semPaths(no, 
+                            
+                            whatLabels = "std",
+                            
+                            nCharNodes = 0, nCharEdges = 0,
+                            layout = m,
+                            sizeMan = 10,
+                            intercepts=FALSE,
+                            residuals=FALSE,
+                            thresholds = FALSE,
+                            fade = F,
+                            reorder = FALSE,
+                            pastel = T,
+                            edge.label.position = 0.4)
+vissigmon <- mark_sig(vismon, fitlib)
+my_label_list_mon <- list(list(node = "CLiber", to = "Civil liberties"),
+                          list(node = "CLiber_1", to = "Civil liberties_1"),
+                          list(node = "CLiber_2", to = "Civil liberties_2"),
+                          list(node = "CLiber_3", to = "Civil liberties_3"))
+vislabelmon <- change_node_label(vissigmon, my_label_list_mon)
+plot(vislabelmon)
+```
+
+```{r}
+#| label: fig-crossfree
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| fig-cap: "ML-SEM cross-lagged panel model ($L$ = 3) to test for reverse causality between the latent variable 'Control' and the observed variable 'Freedom of expression'"
+#| fig-align: center
+#| fig-keep: 'last'
+#| out-width: '50%'
+#| dpi: 300
+
+# Control vs Free
+modelfree <- ' 
+Control =~ Censor + Shut
+Control_1 =~ Censor_1 + Shut_1 
+Control_2 =~ Censor_2 + Shut_2
+Control_3 =~ Censor_3 + Shut_3 
+
+    # cross-lagged model
+    Control ~ Control_1 + Free_1 
+    Control_1 ~ Control_2 + Free_2 
+    Control_2 ~ Control_3 + Free_3 
+
+    Free ~ Free_1 + Control_1 
+    Free_1 ~ Free_2 + Control_2 
+    Free_2 ~ Free_3 + Control_3 
+
+    Control ~~ Free
+    Control_1 ~~ Free_1
+    Control_2 ~~ Free_2
+    Control_3 ~~ Free_3
+'
+
+fitfree <- lavaan::sem(modelfree, data = digaut, fixed.x = FALSE, missing = "ml", se = "robust", cluster = "country_name")
+#summary(fitfree, standardized=T)
+#fitMeasures(fitfree, c("cfi", "rmsea", "srmr"))
+
+m <- matrix(NA, 2, 8)
+
+m[1, ] <- c("Control", NA, "Control_1", NA, "Control_2", NA, "Control_3", NA)
+m[2, ] <- c("Free", NA, "Free_1", NA, "Free_2", NA, "Free_3", NA)
+# exclude variables to construct latents
+no <- semptools::drop_nodes(
+  object = semPlotModel(fitfree),
+  nodes = c("Censor", "Shut", "Censor_1", "Shut_1", "Censor_2", "Shut_2", "Censor_3", "Shut_3", "year", "country_name"))
+
+# visualize model
+visfree <- semPlot::semPaths(no, 
+                             
+                             whatLabels = "std",
+                             style = "ram",
+                             nCharNodes = 0, nCharEdges = 0,
+                             layout = m,
+                             sizeMan = 10,
+                             intercepts=FALSE,
+                             residuals=FALSE,
+                             thresholds = FALSE,
+                             fade = F,
+                             reorder = FALSE,
+                             pastel = T,
+                             edge.label.position = 0.4)
+vissigfree <- mark_sig(visfree, fitfree)
+my_label_list_free <- list(list(node = "Free", to = "Freedom of Sp."),
+                           list(node = "Free_1", to = "Freedom of Sp._1"),
+                           list(node = "Free_2", to = "Freedom of Sp._2"),
+                           list(node = "Free_3", to = "Freedom of Sp._3"))
+vislabelfree <- change_node_label(vissigfree, my_label_list_free)
+plot(vislabelfree)
+```
+
+```{r}
+#| label: fig-cfanopriv
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| fig-cap: "Results from structural equation modelling (I), without the observed variable 'Access data'. Model fit: CFI=0.949, RMSEA=0.111, SRMR=0.037'"
+#| fig-align: center
+#| fig-keep: 'last'
+#| out-width: '50%'
+#| dpi: 300
+
+
+model1b <- ' 
+# measurement model
+Manipulate =~ Disinfo + Abuse
+Surveil =~ Surveillance + Coopt
+Control =~ Censor + Shut
+
+Manipulate ~ year + country_name 
+Surveil ~ year + country_name
+Control ~ year + country_name
+
+         '
+fit1b <- lavaan::cfa(model1b, data = digaut, std.ov = TRUE, std.lv = TRUE, missing = "ML", se = "robust", cluster = "country_name")
+#summary(fit1b, standardized=T, fit.measures=T)
+
+# exclude fixed effects variables
+no <- semptools::drop_nodes(
+  object = semPlotModel(fit1b),
+  nodes = c("year", "country_name"))
+# illustrate
+vis <- semPlot::semPaths(no, whatLabels = "std",
+                         title = FALSE, 
+                         thresholds = F,
+                         sizeMan = 10, 
+                         nodeLabels = c("Disinformation", "Abuse law", "Social media", 
+                                        "Platforms", "Censorship", "Shutdowns", "Manipulate", "Surveil", "Control"),
+                         rotation = 1,
+                         nCharNodes = 20, 
+                         intercepts=FALSE,
+                         residuals=FALSE,
+                         fade = F,
+                         reorder = F)
+
+
+```
+
+```{r}
+#| label: tbl-semnopriv
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| tbl-cap: "Results from structural equation modelling (II), without the observed variable 'Access data'. Model fit: CFI=0.949, RMSEA=0.111, SRMR=0.037"
+
+
+# without controls, lagged IVs, fixed effects, robust SE
+model1a <- ' 
+# measurement model
+Manipulate =~ Disinfo_1 + Abuse_1 
+Surveil =~ Moni_1 + Coopt_1
+Control =~ Censor_1 + Shut_1
+
+  # regressions
+  Account ~ Manipulate 
+  CLiber ~ Surveil 
+  Free ~ c*Control + b*Manipulate 
+  
+   # mediators
+  Manipulate ~ a*Control
+
+  # indirect effects (a*b)
+  ab := a*b
+  totalcont := c + (a*b)
+  
+  # covariances
+  Surveil ~~ Control
+  Manipulate ~~ Surveil
+ 
+         '
+
+fit1a <- lavaan::sem(model1a, data = digaut, std.ov = FALSE, fixed.x = TRUE, missing = "ml", se = "robust", cluster = "country_name")
+#summary(fit1a, standardized=T, fit.measures=T)
+
+
+# with controls
+model1 <- ' 
+# measurement model
+Manipulate =~ Disinfo_1 + Abuse_1 
+Surveil =~ Moni_1 + Coopt_1
+Control =~ Censor_1 + Shut_1
+
+  # regressions
+  Account ~ Manipulate +Judical_1+Legis_1+Conflicts_1+Mobil_1+Pop_1+GDPPC_1
+  CLiber ~ Surveil +Judical_1+Legis_1+Conflicts_1+Mobil_1+Pop_1+GDPPC_1
+  Free ~ c*Control + b*Manipulate +Judical_1+Legis_1+Conflicts_1+Mobil_1+Pop_1+GDPPC_1
+  
+   # mediators
+  Manipulate ~ a*Control
+
+  # indirect effects (a*b)
+  ab := a*b
+  totalcont := c + (a*b)
+  
+  # covariances
+  Surveil ~~ Control
+  Manipulate ~~ Surveil
+
+         '
+
+fit1 <- lavaan::sem(model1, data = digaut, std.ov = FALSE, fixed.x = TRUE, missing = "ml", se = "robust", cluster = "country_name")
+#summary(fit1, standardized=T, fit.measures=T)
+
+# make a nice table
+library(modelsummary)
+library(dplyr)
+library(stringr)
+
+mod_list <- modelsummary(fit1, output = "modelsummary_list")
+mod_data <- as.data.frame(mod_list[1])
+names(mod_data) = gsub(pattern = "tidy.", replacement="", x=names(mod_data))
+
+mod_data <- mod_data %>%
+  filter(str_detect(term, "year", negate = TRUE)) %>%
+  filter(str_detect(term, "country_name", negate = TRUE))
+
+mod_account <- mod_data %>%
+  filter(str_detect(term, "^Account"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value) %>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_account <- list(
+  tidy = mod_account)
+class(mod_account) <- "modelsummary_list"
+
+mod_liber <- mod_data %>%
+  filter(str_detect(term, "^CLiber"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value)%>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_liber <- list(
+  tidy = mod_liber)
+class(mod_liber) <- "modelsummary_list"
+
+mod_free <- mod_data %>%
+  filter(str_detect(term, "^Free"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value)%>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_free <- list(
+  tidy = mod_free)
+class(mod_free) <- "modelsummary_list"
+
+mod_indirect <- mod_data %>%
+filter(str_detect(label, "^a") |
+       component == "Defined")%>%
+  select(-statistic, -label, -group, -s.value)
+mod_indirect <- list(
+  tidy = mod_indirect)
+class(mod_indirect) <- "modelsummary_list"
+  
+mynames <- c(
+  "Manipulate" = "Manipulate (b)",
+  "Surveil" = "Surveil",
+  "Control" = "Control (c)",
+  "Judical_1" = "Judicial constrains",
+  "Legis_1" = "Legislative constraints",
+  "Mobil_1" = "Protests",
+  "Conflicts_1" = "Conflicts",
+  "GDPPC_1" = "GDP per capita (logged)",
+  "Pop_1" = "Population (logged)",
+  "Manipulate ~ Control" = "Control->Manipulate (a)",
+  "ab := a*b" = "a*b",
+  "totalcont := c+(a*b)" = "Total effect c'=c+(a*b)"
+)
+
+tab <- modelsummary(list("Accountability" = mod_account, "Civil liberties" = mod_liber, "Freedom of expression" = mod_free, "Indirect effects" = mod_indirect), estimate = "{estimate}{stars}",
+             gof_map = NA, coef_map = mynames,
+             notes = c('The model is estimated with fixed effects (country and year), robust standard errors are clustered at the country-level.',
+                       'The table omits CFA and covariances (illustrated in Figure 2).'),
+output = "huxtable",
+            title = "Results from structural equation modeling (II)")
+# use this for word output and change to huxtable above
+huxtable::as_flextable(tab) %>% 
+  theme_booktabs() %>%  
+  bold(part = "header") %>%  
+  fontsize(size = 10, part = "header") %>%  
+  flextable::fontsize(size = 9) %>%  
+  flextable::font(fontname = "Times New Roman") %>% 
+autofit()
+
+```
+
+\newpage
+
+```{r}
+#| label: tbl-sem-bi
+#| echo: FALSE
+#| message: FALSE
+#| warning: FALSE
+#| tbl-cap: "Results from structural equation modeling (II), bivariate models"
+
+
+# without controls, lagged IVs, fixed effects, robust SE
+model1a <- ' 
+# measurement model
+Manipulate =~ Disinfo_1 + Abuse_1 
+Surveil =~ Moni_1 + Privacy_1 + Coopt_1
+Control =~ Censor_1 + Shut_1
+
+  # regressions
+  Account ~ Manipulate 
+  CLiber ~ Surveil 
+  Free ~ c*Control + b*Manipulate 
+  
+   # mediators
+  Manipulate ~ a*Control
+
+  # indirect effects (a*b)
+  ab := a*b
+  totalcont := c + (a*b)
+  
+  # covariances
+  Surveil ~~ Control
+  Manipulate ~~ Surveil
+ 
+         '
+
+fit1a <- lavaan::sem(model1a, data = digaut, std.ov = FALSE, fixed.x = TRUE, missing = "ml", se = "robust", cluster = "country_name")
+#summary(fit1a, standardized=T, fit.measures=T)
+
+# make a nice Latex table
+library(modelsummary)
+library(dplyr)
+library(stringr)
+library(gt)
+library(gtsummary)
+
+mod_list <- modelsummary(fit1a, output = "modelsummary_list")
+mod_data <- as.data.frame(mod_list[1])
+names(mod_data) = gsub(pattern = "tidy.", replacement="", x=names(mod_data))
+
+mod_data <- mod_data %>%
+  filter(str_detect(term, "year", negate = TRUE)) %>%
+  filter(str_detect(term, "country_name", negate = TRUE))
+
+mod_account <- mod_data %>%
+  filter(str_detect(term, "^Account"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value) %>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_account <- list(
+  tidy = mod_account)
+class(mod_account) <- "modelsummary_list"
+
+mod_liber <- mod_data %>%
+  filter(str_detect(term, "^CLiber"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value)%>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_liber <- list(
+  tidy = mod_liber)
+class(mod_liber) <- "modelsummary_list"
+
+mod_free <- mod_data %>%
+  filter(str_detect(term, "^Free"),
+         component == "Regression")%>%
+  select(-statistic, -label, -group, -s.value)%>%
+  mutate(term = sub("^[^\\.]+\\~ ", "", term))
+mod_free <- list(
+  tidy = mod_free)
+class(mod_free) <- "modelsummary_list"
+
+mod_indirect <- mod_data %>%
+filter(str_detect(label, "^a") |
+       component == "Defined")%>%
+  select(-statistic, -label, -group, -s.value)
+mod_indirect <- list(
+  tidy = mod_indirect)
+class(mod_indirect) <- "modelsummary_list"
+  
+mynames <- c(
+  "Manipulate" = "Manipulate (b)",
+  "Surveil" = "Surveil",
+  "Control" = "Control (c)",
+  "Manipulate ~ Control" = "Control->Manipulate (a)",
+  "ab := a*b" = "a*b",
+  "totalcont := c+(a*b)" = "Total effect c'=c+(a*b)"
+)
+
+tab <- modelsummary(list("Accountability" = mod_account, "Civil liberties" = mod_liber, "Freedom of expression" = mod_free, "Indirect effects" = mod_indirect), estimate = "{estimate}{stars}",
+             gof_map = NA, coef_map = mynames,
+             notes = c('The model is estimated with fixed effects (country and year), robust standard errors are clustered at the country-level.',
+                       'The table omits CFA and covariances (illustrated in Figure 2).',
+                       'CFI=0.956, RMSEA=[0.056; 0.128], SRMR=0.039 (CFA only),
+                       CFI=0.930, RMSEA=[0.099; 0.154], SRMR=0.055 (excluding controls).'),
+             output = "huxtable",
+             title = "Results from structural equation modeling, bivariate models")
+# use this for word output and change to huxtable above
+huxtable::as_flextable(tab) %>% 
+  theme_booktabs() %>%  
+  bold(part = "header") %>%  
+  fontsize(size = 10, part = "header") %>%  
+  flextable::fontsize(size = 9) %>%  
+  flextable::font(fontname = "Times New Roman") %>% 
+autofit()
+
+```
+
+
+
+# References
+
